@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+
+  }
+
+  #root {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+  }
+
+  .container{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .container2 {
+    width: 35%; 
+    background-color: var(--primary-color);
+    display: none;
+  }
+
+
+  .login{
+    justify-self: center;
+    padding: 10px;
+  }
+  
+  .inputs {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px, #CACACA, solid;
+    border-radius: 8px;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .buttons1, .divWhite {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    justify-content: center;
+    font-weight: 700;
+  }
+  
+  .buttons1{
+    display: flex;
+    background-color: var(--primary-color);
+    font-size: medium;
+    justify-content: center;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .divWhite{
+    display: block;
+    background-color: white;
+    border: 1px, var(--primary-color), solid;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  .forgot {
+    color: black;
+    text-align: left;
+  }
+
+  .titleLogin{
+    text-align: left;
+    margin: 10px 0px;
+  }
+
+  @media screen and (min-width: 800px) {
+    .container2{
+      display: block;
+    }
+
+    .login{
+      width: 45%;
+      justify-self: center;
+    }
+  }
+  
