@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/login.css";
 
+
 interface InputsProps {
     type: string,
     id: string,
@@ -10,6 +11,9 @@ interface InputsProps {
  };
 
 function InputsForm(props:InputsProps){
+    
+
+    
     return(
         <>
         <input type={props.type} id={props.id} placeholder={props.placeholder} required className="inputs"

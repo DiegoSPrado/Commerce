@@ -1,25 +1,35 @@
-import { Link } from "react-router-dom";
-import LoginHeader from "../components/Form/LoginHeader";
-import "../styles/login.css";
-import LoginForm from "../components/Form/LoginForm";
+
+import "../styles/login.css"
+import { useEffect, useState } from "react";
+import { Outlet } from "react-router-dom";
 
 function Login(){
+    const [ showDiv, setShowDiv] = useState<boolean>(false);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(min-width: 800px)");
+
+        const handleMediaQueryChange = (event: MediaQueryListEvent) => {
+        setShowDiv(event.matches)
+    };
+
+        setShowDiv(mediaQuery.matches)
+
+        mediaQuery.addEventListener("change", handleMediaQueryChange);
+        
+        return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    }, []);
+    
+    
+
     return(
            <> 
             <div className="container">
                 <div className="login">
-                    <LoginHeader
-                    title="Entrar"
-                                parag="Informe seus dados para acessar"
-                    />
-                    <LoginForm/>
-                    <Link to={"/Register"} className="divWhite">Não tenho uma conta</Link>
-                    <Link to={"/Register"} className="forgot">Esqueci a minha senha</Link>
+                    <Outlet/>
                 </div>
-           
-            
         </div>
-        <div className="container2"></div>
+        { showDiv && <div className="container2"></div>}
         </>
     );
 };
