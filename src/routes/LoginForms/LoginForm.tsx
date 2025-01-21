@@ -2,6 +2,7 @@
 import InputsForm from "../../components/Form/InputsForm";
 import ButtonInputs from "../../components/Form/ButtonInputs";
 import React, { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -28,17 +29,18 @@ function LoginForm(){
            );
             console.log(response) 
             setToken(response.data[0]);
-            setMessage("Login efetuado com sucesso!");
+            toast.success("Login Realizado com sucesso!")
             localStorage.setItem("token", response.data[0]);
             navigate("/");
         }
         catch {
-           setMessage("Credencias inválidas"); 
+         toast.error("Email ou senha inválidos.")  
         }  
     };
     
     return(
         <>
+            <ToastContainer/>
             <LoginHeader
                 title="Entrar"
                 parag="Informe seus dados para acessar"

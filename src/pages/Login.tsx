@@ -6,14 +6,16 @@ import { Outlet } from "react-router-dom";
 function Login(){
     const [ showDiv, setShowDiv] = useState<boolean>(false);
 
+
     useEffect(() => {
         const mediaQuery = window.matchMedia("(min-width: 800px)");
 
         const handleMediaQueryChange = (event: MediaQueryListEvent) => {
-        setShowDiv(event.matches)
+        setShowDiv(event.matches);
+
     };
 
-        setShowDiv(mediaQuery.matches)
+        setShowDiv(mediaQuery.matches);
 
         mediaQuery.addEventListener("change", handleMediaQueryChange);
         
@@ -29,6 +31,7 @@ function Login(){
                     <Outlet/>
                 </div>
         </div>
+
         { showDiv && <div className="container2"></div>}
         </>
     );

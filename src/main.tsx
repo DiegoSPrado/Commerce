@@ -11,6 +11,7 @@ import LoginForm from './routes/LoginForms/LoginForm.tsx';
 import RegisterForm from './routes/LoginForms/RegisterForm.tsx';
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
         path: "/login/recovery",
         element: <RecoveryPassword/>,
       },
+      {
+        path: "/login/token",
+        element: <RegisterForm/>
+      }
     ]
   },
 ])

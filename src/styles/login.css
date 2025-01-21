@@ -101,6 +101,8 @@
     cursor: pointer;
   }
 
+  
+
   @media screen and (min-width: 800px) {
     .container{
       width: 65%;
@@ -115,6 +117,10 @@
     .login{
       width: 45%;
       justify-self: center;
+    }
+
+    .imgLogin{
+      display: inline;
     }
   }
   

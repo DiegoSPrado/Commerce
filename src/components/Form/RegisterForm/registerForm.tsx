@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
-import ButtonInputs from "../ButtonInputs";
 import InputsForm from "../InputsForm";
 import LoginHeader from "../LoginHeader";
+
+import React from "react";
+import ButtonInputs from "../ButtonInputs";
+
 
 export function RegisterFormComponent(
   name: string,
@@ -14,9 +17,13 @@ export function RegisterFormComponent(
   setEmail: (email: string) => void,
   setPassword: (password: string) => void,
   setRepeatPassword: (repeatPassword: string) => void,
-  handleRegister: (evt: React.FormEvent) => void
-) {
+  handleRegister: (evt: React.FormEvent) => void,
+
+)
+{
   return (
+    
+    
     <>
             <LoginHeader
                 title="Criar conta"  
@@ -58,7 +65,7 @@ export function RegisterFormComponent(
                     id="password"
                     placeholder="Repita a senha"
                 />
-                <ButtonInputs  text="Cadastrar" />
+                <ButtonInputs text="Cadastrar"/>
                 <Link to={"/login"} className="divWhite">Já tenho uma conta</Link>
             </form>
         </>
