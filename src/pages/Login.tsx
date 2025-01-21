@@ -5,17 +5,18 @@ import { Outlet } from "react-router-dom";
 
 function Login(){
     const [ showDiv, setShowDiv] = useState<boolean>(false);
-
+    
 
     useEffect(() => {
-        const mediaQuery = window.matchMedia("(min-width: 800px)");
+        const mediaQuery = window.matchMedia("(min-width: 1200px)");
 
         const handleMediaQueryChange = (event: MediaQueryListEvent) => {
         setShowDiv(event.matches);
-
+        
     };
 
         setShowDiv(mediaQuery.matches);
+        
 
         mediaQuery.addEventListener("change", handleMediaQueryChange);
         
@@ -31,7 +32,7 @@ function Login(){
                     <Outlet/>
                 </div>
         </div>
-
+        { showDiv && <img src='src/assets/imgs/WomenLogin.png' alt="Mulher Logo" className="imgLogin"/>}
         { showDiv && <div className="container2"></div>}
         </>
     );

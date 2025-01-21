@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import LoginHeader from "../../components/Form/LoginHeader";
+import { InputPassword } from "../../components/Form/InputPassword";
 
 
 function LoginForm(){
@@ -54,10 +55,9 @@ function LoginForm(){
                     placeholder="E-mail"
                 />
                 <div className="passwordDiv">
-                    <InputsForm
+                    <InputPassword
                         onChange={(evt) => setPassword(evt.target.value)}
                         value={password}
-                        type="password"
                         id="password"
                         placeholder="Senha"
                     />

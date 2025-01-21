@@ -4,6 +4,7 @@ import LoginHeader from "../LoginHeader";
 
 import React from "react";
 import ButtonInputs from "../ButtonInputs";
+import { InputPassword } from "../InputPassword";
 
 
 export function RegisterFormComponent(
@@ -51,17 +52,15 @@ export function RegisterFormComponent(
                     id="email"
                     placeholder="E-mail"
                 />
-                <InputsForm
+                <InputPassword
                     onChange={(evt) => setRepeatPassword(evt.target.value)}
                     value={repeatPassword}
-                    type="password"
                     id="repeatPassword"
                     placeholder="Senha"
                 />
-                <InputsForm
+                <InputPassword
                     onChange={(evt) => setPassword(evt.target.value)}
                     value={password}
-                    type="password"
                     id="password"
                     placeholder="Repita a senha"
                 />
