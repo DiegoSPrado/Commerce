@@ -13,9 +13,6 @@ import { InputPassword } from "../../components/Form/InputPassword";
 function LoginForm(){
     const [ email, setEmail] = useState("");
     const [ password, setPassword] = useState("");
-    const [ token, setToken] = useState<string | null>(null);
-    const [message, setMessage] = useState("");
-    const [ showPassword, setShowPassword] = useState<boolean>(false);
     const navigate = useNavigate();    
 
 
@@ -29,7 +26,6 @@ function LoginForm(){
             }
            );
             console.log(response) 
-            setToken(response.data[0]);
             toast.success("Login Realizado com sucesso!")
             localStorage.setItem("token", response.data[0]);
             navigate("/");

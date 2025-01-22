@@ -8,7 +8,7 @@ function Login(){
     
 
     useEffect(() => {
-        const mediaQuery = window.matchMedia("(min-width: 1200px)");
+        const mediaQuery = window.matchMedia("(min-width: 800px)");
 
         const handleMediaQueryChange = (event: MediaQueryListEvent) => {
         setShowDiv(event.matches);
