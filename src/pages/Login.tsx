@@ -32,7 +32,7 @@ function Login(){
                     <Outlet/>
                 </div>
         </div>
-        { showDiv && <img src='src/assets/imgs/WomenLogin.png' alt="Mulher Logo" className="imgLogin"/>}
+         <img src='src/assets/imgs/WomenLogin.png' alt="Mulher Logo" className="imgLogin"/>
         { showDiv && <div className="container2"></div>}
         </>
     );

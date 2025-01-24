@@ -133,7 +133,9 @@
     cursor: pointer;
   }
 
-  
+  .imgLogin {
+    display: none;
+  }
 
   @media screen and (min-width: 800px) {
     .container{
@@ -151,12 +153,16 @@
       justify-self: center;
     }
 
+    
+  
+  @media screen and (min-width: 1400px) {
     .imgLogin{
       position: absolute;
-      right: 270px;
-      max-width: 400px;
-      height: auto;
+      display: block;
+      right: 100px;
+      max-width: 650.75px;
+      height: 631.48px;
       z-index: 10;
     }
   }
-  
+  }
