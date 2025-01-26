@@ -1,10 +1,62 @@
 .headerstyle{
     display: flex;
-
     width: 100vw;
     justify-content: space-around;
+    align-items: center;
 }
 
+.iconHeader{
+  transform: translateY(10%);
+  color: var(--primary-color);
+}
+/*Header Info */
+
+.headerInfo{
+  display: none;
+}
+
+@media screen  and (min-width: 800px){
+  .headerInfo {
+  display: flex;
+  background-color: var(--secondary-color);
+  justify-content: space-between;
+  padding: 12px 120px 12px 120px;
+}
+
+.infoDivs{
+  display: flex;
+
+  gap: 15px;
+}
+}
+
+/* Search styles */
+
+.searchInput{
+  position: relative;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background-color: var(--secondary-color);
+  width: 507px;
+  height: 48px;
+  border-radius: 10px;
+  padding: 0px 10px;
+}
+
+.searchInput button {
+  border: none;
+  transform: translateY(10%);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.searchInput input {
+  border: none;
+  outline: 0;
+  background-color: transparent;
+  width: 98%;
+}
 
 /*Menu styles */
 .menu-container {
@@ -13,9 +65,12 @@
   }
   
   .ham-button {
-    background: none;
+    background-color: var(--secondary-color);
     border: none;
     cursor: pointer;
+    padding: 3px;
+    border-radius: 10px;
+    transform: translateY(10%)
   }
   
   
@@ -45,5 +100,14 @@
     color: #333;
     transition: 3s; 
   }
+  /**/
   
+  .userDiv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+  }
  
