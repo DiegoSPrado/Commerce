@@ -872,10 +872,10 @@ form-data@^4.0.0:
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
-framer-motion@^12.0.5:
-  version "12.0.5"
-  resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-12.0.5.tgz"
-  integrity sha512-OgfUHfL+u80uCf6VzkV7j3+H2W9zPMdV+40bug4ftB0C2+0FpfNca2rbH2Fouq2R7//bjw6tJhOwXsrsM4+LKw==
+framer-motion@^12.0.6:
+  version "12.0.6"
+  resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-12.0.6.tgz"
+  integrity sha512-LmrXbXF6Vv5WCNmb+O/zn891VPZrH7XbsZgRLBROw6kFiP+iTK49gxTv2Ur3F0Tbw6+sy9BVtSqnWfMUpH+6nA==
   dependencies:
     motion-dom "^12.0.0"
     motion-utils "^12.0.0"
@@ -1104,12 +1104,12 @@ motion-utils@^12.0.0:
   resolved "https://registry.npmjs.org/motion-utils/-/motion-utils-12.0.0.tgz"
   integrity sha512-MNFiBKbbqnmvOjkPyOKgHUp3Q6oiokLkI1bEwm5QA28cxMZrv0CbbBGDNmhF6DIXsi1pCQBSs0dX8xjeER1tmA==
 
-motion@^12.0.5:
-  version "12.0.5"
-  resolved "https://registry.npmjs.org/motion/-/motion-12.0.5.tgz"
-  integrity sha512-AFCMJWX7xtd2V4PEuL+FnVscw++SaMZuFXrm3kjN1sIqrNDJdJrFbZ2B+pfq6CKlcTor/vVJcmrc2pJqF3EByw==
+motion@^12.0.6:
+  version "12.0.6"
+  resolved "https://registry.npmjs.org/motion/-/motion-12.0.6.tgz"
+  integrity sha512-AzCEO0+//mPlcGiL9JaVwjddHY1cbbnvz5upHL0toqQwsPCs+hiKJ0XG5jfG0XwDtBbiSXdEqW/UTmGLwkVQ6A==
   dependencies:
-    framer-motion "^12.0.5"
+    framer-motion "^12.0.6"
     tslib "^2.4.0"
 
 ms@^2.1.3:
@@ -1353,6 +1353,11 @@ supports-color@^7.1.0:
   integrity sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
   dependencies:
     has-flag "^4.0.0"
+
+swiper@^11.2.1:
+  version "11.2.1"
+  resolved "https://registry.npmjs.org/swiper/-/swiper-11.2.1.tgz"
+  integrity sha512-62G69+iQRIfUqTmJkWpZDcX891Ra8O9050ckt1/JI2H+0483g+gq0m7gINecDqMtDh2zt5dK+uzBRxGhGOOvQA==
 
 to-regex-range@^5.0.1:
   version "5.0.1"

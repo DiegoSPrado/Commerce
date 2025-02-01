@@ -12,7 +12,7 @@ export function MenuComponent () {
     return(
         <div className="menu-container">
             <button className="ham-button" onClick={changeMenu}>
-                {openMenu ? <X size={35} color="#FF653F"/> : <Menu size={35} color="#FF653F"/>}
+                {openMenu ? <X size={35} className="iconHeader"/> : <Menu size={35} className="iconHeader"/>}
             </button>
             { openMenu &&  (<nav className="menu">
                 <ul>

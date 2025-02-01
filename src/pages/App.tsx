@@ -1,23 +1,22 @@
-import { jwtDecode } from 'jwt-decode';
-import '../styles/App.css';
-import { useEffect, useState } from 'react';
-import { HomeHeader } from '../components/HomeComponents/HomeHeader';
+import '../styles/App.css'
+import { HomeHeader } from '../components/HomeHeaderComponents/HomeHeader';
+import { FrameCategory } from '../components/HomeHeaderComponents/FrameCategory';
+
+import { FooterComponent } from '../components/HomeComp/FooterComponent';
+import { Outlet } from 'react-router-dom';
 
 function App() {
- 
-  const [user, setUser] = useState<{email: string} | null>(null);
-  
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-    if (token) {
-      const decoded: { email: string} = jwtDecode(token);
-      setUser(decoded);
-    }
-  }, []);
-
+   
   return (
    <div>
       <HomeHeader/>
+      <section className='mainContainer'>
+        <div className='carouselContainer'>
+          <FrameCategory />
+        </div>
+        <Outlet/>
+      </section>
+      <FooterComponent/>
    </div>
   )
 }

@@ -9,8 +9,8 @@ export function HeaderInfos(){
                         <path d="M6.93806 8.7499C7.95739 8.7499 8.78371 7.92357 8.78371 6.90425C8.78371 5.88492 7.95739 5.05859 6.93806 5.05859C5.91873 5.05859 5.09241 5.88492 5.09241 6.90425C5.09241 7.92357 5.91873 8.7499 6.93806 8.7499Z" stroke="#FF653F" stroke-linecap="round" stroke-linejoin="round" color="#FF653F"/>
                         </svg>
                 </span>
-                <p>Entrega em Getuba, Caraguatatuba-SP</p>
-                <p style={{color: '#D9D9D9'}}>|</p>
+                <p>Entrega em <span style={{fontWeight: 'bold'}}>Getuba, Caraguatatuba-SP</span></p>
+                <div className="divSlash"></div>
                 <span className="iconHeader">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 14.25C6.39782 14.25 6.77936 14.092 7.06066 13.8107C7.34196 13.5294 7.5 13.1478 7.5 12.75C7.5 12.3522 7.34196 11.9706 7.06066 11.6893C6.77936 11.408 6.39782 11.25 6 11.25C5.60218 11.25 5.22064 11.408 4.93934 11.6893C4.65804 11.9706 4.5 12.3522 4.5 12.75C4.5 13.1478 4.65804 13.5294 4.93934 13.8107C5.22064 14.092 5.60218 14.25 6 14.25V14.25ZM13.5 14.25C13.8978 14.25 14.2794 14.092 14.5607 13.8107C14.842 13.5294 15 13.1478 15 12.75C15 12.3522 14.842 11.9706 14.5607 11.6893C14.2794 11.408 13.8978 11.25 13.5 11.25C13.1022 11.25 12.7206 11.408 12.4393 11.6893C12.158 11.9706 12 12.3522 12 12.75C12 13.1478 12.158 13.5294 12.4393 13.8107C12.7206 14.092 13.1022 14.25 13.5 14.25V14.25Z" stroke="#FF653F" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -25,3 +25,4 @@ export function HeaderInfos(){
         </div>
     )
 }
+
