@@ -28,6 +28,8 @@
   justify-content: space-between;
   padding: 12px 120px 12px 120px;
   font-size: 14px;
+  width: 100%;
+  align-items: center;
 }
 
 .infoDivs{
@@ -46,7 +48,7 @@
   display: flex;
   gap: 16px;
   align-items: center;
-  background-color: var(--secondary-color);
+  background-color: var(--terciary-color);
   width: 507px;
   height: 48px;
   border-radius: 10px;
@@ -132,4 +134,14 @@
   height: 0;
   transform: rotate(-90deg);
   margin: auto;
+}
+
+.logout{
+  background-color: var(--secondary-color);
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
 }

@@ -1,8 +1,11 @@
+import { useState } from 'react';
 import '../../styles/App.css'
 
 export function FrameCategory(){
-    
-    const frameArray = [
+   
+  const [ selectedIndex, setSelectedIndex] = useState(null)
+
+  const frameArray = [
         {
           id: 1,
           category: 'Eletrodomésticos'
@@ -32,14 +35,18 @@ export function FrameCategory(){
           category: 'Esporte'
         },
     
-      ]
-   
+  ];
+
+  const changeClass = (index) => {
+    setSelectedIndex(selectedIndex === index ? null : index);
+  };
+
     return(
        <div className='carouselDiv'>
        {
-        frameArray.map((e) => {
+        frameArray.map((e, index) => {
             return(
-              <div className='frameDiv' >
+              <div className={selectedIndex === index  ? "frameDivSelected" : "frameDiv"} onClick={() => changeClass(index)}>
                 <p>{e.category}</p>
                 <span className='arrow'>
                 <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">

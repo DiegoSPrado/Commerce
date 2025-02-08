@@ -23,7 +23,7 @@ function UserSignupComponent ()  {
             <path d="M14.1254 10.7949H16.8984" stroke="#FF653F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
                 </span>
-                <Link to={'/login'} className='user'>Carrinho</Link>
+                <Link to={'/buycart'} className='user'>Carrinho</Link>
             </div>
         </>
     )

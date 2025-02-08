@@ -1,18 +1,91 @@
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
+/* Categories component Style*/
 
-.category-item{
-    width: 132px;
-    height: 132px;
-    border: var(--primary-color) 1px solid;
+.container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    overflow: hidden; 
+ 
+  }
+  
+  .category-item {
+    width: 150px; 
+    height: 150px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--secondary-color);
     border-radius: 50%;
-    margin: 50px;
-    
-}
+  }
+  
+  .category-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; 
+    border-radius: 10px; 
+  }
 
 .imgCategory{
     transform: translateY(14px);
+}
+
+.containerPoducts{
+    
+    width: Fill (430px)px;
+    height: Hug (379px)px;
+    padding: 40px 24px 40px 24px;
+    gap: 16px;
+    border: 0px 0px 1px 0px;
+    
+
+}
+
+
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    border-radius: 16px;
+    position: relative;
+    border: 1px solid var(--secondary-color); 
+    background-color: var(--secondary-color);
+    
+}
+
+.a{
+  text-decoration: none;
+  
+}
+
+.card:hover{
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.divPromo{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 5px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Carousel Styles */
+
+.carouselHome{
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .carouselHome{
+    display: flex;
+  }
 }

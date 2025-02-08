@@ -8,9 +8,9 @@ import { Outlet } from 'react-router-dom';
 function App() {
    
   return (
-   <div>
+   <div className='mainContainer'>
       <HomeHeader/>
-      <section className='mainContainer'>
+      <section className='sectionDiv'>
         <div className='carouselContainer'>
           <FrameCategory />
         </div>

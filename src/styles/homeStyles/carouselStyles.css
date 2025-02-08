@@ -1,0 +1,51 @@
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background: #007bff;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+  }
+  
+  /* Estilos das setas */
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    padding: 10px;
+    border-radius: 50%;
+    width: 86px;
+    height: 86px;
+  }
+  
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background: var(--terciary-color);
+    transition: .4s;
+  }
+  
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 20px;
+  }
+  
+  /* Estilos da paginação */
+  .swiper-pagination-bullet {
+    background: white;
+    width: 12px;
+    height: 12px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: white;
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  
+  .swiper-pagination {
+    bottom: 10px;
+  }
