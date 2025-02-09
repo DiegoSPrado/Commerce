@@ -49,3 +49,7 @@
   .swiper-pagination {
     bottom: 10px;
   }
+
+  .carouselHome{
+    display: none;
+  }

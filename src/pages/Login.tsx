@@ -1,10 +1,19 @@
 
-import "../styles/login.css"
+import  "../styles/login.css";
 import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 
 function Login(){
     const [ showDiv, setShowDiv] = useState<boolean>(false);
+
+    useEffect(() => {
+        const root = document.getElementById("root");
+        if (root) root.classList.add("root-login");
+    
+        return () => {
+          if (root) root.classList.remove("root-login");
+        };
+      }, []);
     
 
     useEffect(() => {
@@ -14,14 +23,13 @@ function Login(){
         setShowDiv(event.matches);
         
     };
-
         setShowDiv(mediaQuery.matches);
-        
-
         mediaQuery.addEventListener("change", handleMediaQueryChange);
         
         return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
     }, []);
+    
+   
     
     
 
@@ -32,7 +40,7 @@ function Login(){
                     <Outlet/>
                 </div>
         </div>
-         <img src='src/assets/imgs/WomenLogin.png' alt="Mulher Logo" className="imgLogin"/>
+         <img src='/src/assets/imgs/WomenLogin.png' alt="Mulher Logo" className="imgLogin"/>
         { showDiv && <div className="container2"></div>}
         </>
     );

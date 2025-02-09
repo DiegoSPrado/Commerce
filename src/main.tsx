@@ -11,6 +11,7 @@ import LoginForm from './routes/LoginForms/LoginForm.tsx';
 import RegisterForm from './routes/LoginForms/RegisterForm.tsx';
 import { Home } from './routes/HomePages/Home.tsx';
 import { CategotiesHome } from './routes/HomePages/Categories.tsx';
+import { ProductPage } from './pages/ProductPage.tsx';
 
 
 
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       }
     ]
   },
+  {
+    path: "/product/:id",
+    element: <ProductPage/>
+  }
 ])
 
 createRoot(document.getElementById('root')!).render(
