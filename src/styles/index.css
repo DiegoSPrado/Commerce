@@ -13,5 +13,8 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
+#root{
+  width: 100vw;
+  scrollbar-width: none;
+}
 

@@ -32,7 +32,8 @@ const dataFrame = [
         name: 'Galaxy S22 Ultra',
         price: 3200.00,
         image: '/src/assets/imgs/smartphones/SangS22.png',
-        discount: 45
+        discount: 45,
+        
     }
 
 ]

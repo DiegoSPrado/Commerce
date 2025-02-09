@@ -1,0 +1,7 @@
+.miniCardDiv{
+    display: flex;
+    gap: 20px;
+    justify-self: center;
+    margin: 30px  
+}
+
