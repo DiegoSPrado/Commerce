@@ -1,0 +1,8 @@
+.cartProductDiv{
+    display: grid;
+}
+
+.btnCartQuant{
+    color: white;
+    background-color: black;
+}

@@ -4,6 +4,7 @@
   --primary-color: #FF653F;
   --secondary-color: #F5F5F5;
   --terciary-color: rgba(243, 249, 251, 1);
+  --product-color: rgba(202, 202, 202, 1);
 }
 
 *{
@@ -15,6 +16,8 @@
 
 #root{
   width: 100vw;
-  scrollbar-width: none;
+ ;
 }
+
+
 

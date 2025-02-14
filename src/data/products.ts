@@ -1,3 +1,10 @@
+export interface Product {
+    id: number;
+    name: string;
+    price: number;
+    image: string
+} 
+
 const dataFrame = [
     {
         id: 1,

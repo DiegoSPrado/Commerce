@@ -38,10 +38,10 @@ export function HomeCarousel(){
         <div style={{marginTop: '80px', width: '70vw', scrollbarWidth: 'none',  display: 'flex', justifyContent: 'center '}} className='carouselHome'>
             <Swiper
                modules={[Navigation, Pagination]}
-               slidesPerView={1} // Apenas um slide visível
-               navigation // Setas de navegação
-               pagination={{ clickable: true }} // Paginação clicável
-               loop={true} // Loop infinito
+               slidesPerView={1} 
+               navigation 
+               pagination={{ clickable: true }} 
+               
             >
                {data.map((e) => {
                 return(

@@ -1,13 +1,22 @@
+import { useState } from 'react';
 import '../../styles/homeheader.css'
+import { Link } from 'react-router-dom';
 
 interface UserLoginProps {
     user: string;
     signOut: () => void;
 }
 export function UserLoginComponent(props: UserLoginProps){
+    
+    const [ openMenu, setOpenMenu] = useState<boolean>(false)
+
+    const openUserMenu = () => {
+        setOpenMenu(!openMenu)
+    }
+    
     return(
         <>
-            <div style={{display: 'flex'}}>
+            <div style={{display: 'flex'}} onClick={openUserMenu}>
                 <span >
                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="12" cy="8" r="4.75" stroke="#FF653F" stroke-width="1.5"/>
@@ -16,10 +25,16 @@ export function UserLoginComponent(props: UserLoginProps){
                 </span>
                 <p className='user'>{props.user}</p>
             </div>
-            <div className='divSlash'></div>
-            <div>
-                <button className='logout' onClick={props.signOut}>Logout</button>
-            </div>
+            {openMenu && 
+            <nav className="menu">
+            <ul>
+                <Link to={'/'}>Perfil</Link>
+                <Link to={'/buycart'}>Carrinho</Link>
+                <li >Sair</li>
+            </ul>
+        </nav>
+            }
+            
         </>
     )
 } 
