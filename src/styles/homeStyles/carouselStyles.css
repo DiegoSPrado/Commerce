@@ -8,6 +8,10 @@
     font-size: 24px;
     border-radius: 10px;
   }
+
+  .carouselHome{
+    display: none;
+  }
   
   /* Estilos das setas */
   .swiper-button-prev,
@@ -50,6 +54,15 @@
     bottom: 10px;
   }
 
+@media screen and (min-width: 900px) {
   .carouselHome{
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70vw;
+    scrollbar-width: none;
+    margin-top: 80px;
   }
+}  
+
+ 

@@ -35,7 +35,7 @@ const data = [
 ]
 export function HomeCarousel(){
     return(
-        <div style={{marginTop: '80px', width: '70vw', scrollbarWidth: 'none',  display: 'flex', justifyContent: 'center '}} className='carouselHome'>
+        <div className='carouselHome'>
             <Swiper
                modules={[Navigation, Pagination]}
                slidesPerView={1} 

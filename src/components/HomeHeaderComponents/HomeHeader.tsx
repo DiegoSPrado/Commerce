@@ -47,7 +47,7 @@ export function HomeHeader() {
           <div style={divStyle}>
             <MenuComponent/>
                 <Link to={'/'}>
-                  <span>
+                  <span >
                   <svg width="140" height="39" viewBox="0 0 140 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M140 1.50366L140 6.51342L130.034 6.51342L130.034 38.9422L123.893 38.9422L123.893 6.51342L113.873 6.51342L113.873 1.50366L140 1.50366Z" fill="#1B1B1F"/>
                               <path d="M6.14128 33.9862L18.8004 33.9862L18.8004 38.9421L0.000243939 38.9421L0.000244141 1.50354L6.14128 1.50354L6.14128 33.9862Z" fill="#1B1B1F"/>

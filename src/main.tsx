@@ -14,6 +14,7 @@ import { CategotiesHome } from './routes/HomePages/Categories.tsx';
 import { ProductPage } from './pages/ProductPage.tsx';
 import { CartPage } from './pages/CartPage.tsx';
 import { CartProvider } from './context/CartContext.tsx';
+import { PaymentPage } from './pages/PaymentPage.tsx';
 
 
 
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
   {
     path: "/buycart",
     element: <CartPage/>
+  },
+  {
+    path: "/payment",
+    element: <PaymentPage/>
   }
 ])
 

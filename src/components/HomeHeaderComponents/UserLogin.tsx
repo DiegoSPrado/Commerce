@@ -28,8 +28,12 @@ export function UserLoginComponent(props: UserLoginProps){
             {openMenu && 
             <nav className="menu">
             <ul>
-                <Link to={'/'}>Perfil</Link>
-                <Link to={'/buycart'}>Carrinho</Link>
+                <li>
+                    <Link to={'/'} style={{color: 'black', textDecoration: 'none'}}>Perfil</Link>
+                </li>
+                <li>
+                    <Link to={'/buycart'}   style={{color: 'black', textDecoration: 'none'}}>Carrinho</Link>
+                </li>
                 <li >Sair</li>
             </ul>
         </nav>

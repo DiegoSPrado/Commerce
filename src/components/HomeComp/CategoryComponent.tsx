@@ -41,7 +41,7 @@ export function CategoryComponent(){
     ]
     
     return(
-        <>
+        <div className='carouselDiv'>
             {dataCategories.map((e) =>{
                 return (
                     <div key={e.id} style={{textAlign: 'center'}}>
@@ -52,6 +52,6 @@ export function CategoryComponent(){
                     </div>
                 ) 
                })}
-        </>
+        </div >
     )
 }

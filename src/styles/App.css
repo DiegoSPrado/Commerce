@@ -1,14 +1,5 @@
 
 
-.mainContainer{
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  align-items: center;
- 
-
-
-}
 
 .titleHome{
   color: rgba(102, 102, 102, 1);
@@ -17,7 +8,7 @@
 .sectionDiv{
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  
   align-items: center;
 }
 
@@ -27,8 +18,7 @@
   min-width: 350px;
   padding: 20px 0px;
   gap: 0px;
-
-
+  
 }
 
 .carouselDiv{
@@ -80,7 +70,7 @@
 
 .footerContainer{
   margin-top: auto;
-  height:  310px;
+  height:  360px;
   width: 100%;
   padding: 16px 120px 16px 120px;
   background-color: var(--primary-color);
@@ -112,10 +102,6 @@
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
-  width: 100%;
-
-
-
 }
 .divProducts  {
   min-width: max-content; /* Evita que os itens quebrem para a linha de baixo */
@@ -139,3 +125,10 @@
   background: #555;
 }
 
+@media screen and (min-width: 900px) {
+  .carouselDiv{
+    scrollbar-width: none;
+  }
+
+  
+}

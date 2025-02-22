@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import InputsForm from "../../components/Form/InputsForm";
 import ButtonInputs from "../../components/Form/ButtonInputs";
 import React, { useState } from "react";

@@ -7,7 +7,7 @@ export function CardProduct(){
     const navigate = useNavigate();
     
     return(
-        <>
+        <div className='carouselDiv'>
             {dataFrame.map((e) => {
                 return(
                     
@@ -27,6 +27,6 @@ export function CardProduct(){
                     
                 )
             })}
-        </>
+        </div>
     )
 }

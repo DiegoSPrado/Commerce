@@ -10,7 +10,7 @@ function App() {
    
   
   return (
-   <div className='mainContainer'>
+   <div >
       <HomeHeader/>
       <section className='sectionDiv'>
         <div className='carouselContainer'>
@@ -19,6 +19,7 @@ function App() {
         <Outlet/>
       </section>
       <FooterComponent/>
+      
    </div>
   )
 }

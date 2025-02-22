@@ -1,8 +1,91 @@
 .cartProductDiv{
-    display: grid;
+    display: flex;
+    width: 382px;
+    gap: 10px;
+    margin: 20px;
+   
 }
 
-.btnCartQuant{
+.cartDivs:last-child {
+    margin-left: auto;
+    align-self: center;
+}
+
+
+.divBtnCart{
+    width: 96px;
+    display: flex;
+    
+   
+}
+
+.productSpecificationsCart{
+    display: flex;
+    background-color: var(--primary-color);
+    height: 20px;
+    font-size: small;
+    padding: 6px 10px 5px 10px  ;
+    align-items: center;
+    color: white;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.divBtnCart button{
     color: white;
     background-color: black;
+    border: none;
+    width: 30px;
+    cursor: pointer;
+}
+
+.divBtnCart div {
+    width: 36px;
+    background-color: var(--terciary-color);
+    text-align: center;
+}
+
+.counpomContainer{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+
+
+.section-cartpage{
+    margin-left: 20px;
+}
+
+.amountDiv{
+    display: flex;
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+    background-color: aqua;
+    
+}
+
+
+
+
+
+@media screen and (min-width: 900px) {
+    .divSlash-cartPage{
+        border: solid 1px #d9d9d9;
+        width: 0;
+        height: 400px;
+        margin: 0px 80px 0px 80px;
+       
+    }
+
+    .section-cartpage{
+        display: flex;
+        height: 60vh;
+        width: 70vw;
+        margin:  auto;
+        margin-top: 40px;
+    }
 }
