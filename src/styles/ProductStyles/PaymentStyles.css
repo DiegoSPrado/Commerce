@@ -1,0 +1,42 @@
+.section-payment{
+    padding: 20px;
+}
+
+.payMethod-container{
+    display: flex;
+    background-color: var(--secondary-color);
+    justify-content: space-around;
+    align-items: center;
+    height: 72px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.payMethod-container > div {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ax2{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+    margin: 10px 10px 10px 10px;
+}
+
+.icon{
+    transform: translateY(50deg);
+}
+
+@media screen and (min-width: 900px) {
+    .section-payment{
+        display: flex;
+        width: 50%;
+        margin: 0 auto;
+    }
+}

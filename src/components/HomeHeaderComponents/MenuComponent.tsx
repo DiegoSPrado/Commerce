@@ -1,6 +1,6 @@
 import {  useState } from "react";
 import "../../styles/homeheader.css"
-import { Menu, X } from "lucide-react";
+
 
 export function MenuComponent () {
     const [openMenu, setOpenMenu] = useState(false);
@@ -12,7 +12,9 @@ export function MenuComponent () {
     return(
         <div className="menu-container">
             <button className="ham-button" onClick={changeMenu}>
-                {openMenu ? <X size={35} className="iconHeader"/> : <Menu size={35} className="iconHeader"/>}
+                <div className={`linha ${openMenu ? "aberto" : ""}`} />
+                <div className={`linha ${openMenu ? "aberto" : ""}`} />
+                <div className={`linha ${openMenu ? "aberto" : ""}`} />
             </button>
             { openMenu &&  (<nav className="menu">
                 <ul>

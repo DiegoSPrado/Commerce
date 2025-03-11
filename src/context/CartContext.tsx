@@ -1,5 +1,6 @@
 import { createContext, useState, ReactNode, useEffect } from "react";
 import { Product } from "../data/products";
+import { toast } from "react-toastify";
 
 interface ProductBuyCart extends Product {
   quantidade: number;
@@ -9,7 +10,9 @@ interface CartContextType {
   carrinho: ProductBuyCart[];
   addToCart: (produto: Product) => void;
   removeFromCart: (produto: Product) => void;
-  changeValue: (id: number, delta: number) => void
+  changeValue: (id: number, delta: number) => void;
+  getTotalPrice: () => number;
+  getTotalItens: () => number;
 }
 
 export const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -30,6 +33,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
         newBuycart = [...prevCart, {...produto, quantidade: 1 }];
       }
       localStorage.setItem("carrinho", JSON.stringify(newBuycart));
+      toast.info('Item adicionado ao carrinho')
       return newBuycart; 
     });
     
@@ -49,12 +53,20 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem("carrinho", JSON.stringify(newBuycart));
   };
 
+  const getTotalPrice = () => {
+    return carrinho.reduce((total, item) => total + item.price * item.quantidade, 0);
+  };
+
+  const getTotalItens = () => {
+    return carrinho.reduce((total, item) => total + item.quantidade, 0);
+  };
+
   useEffect(() => {
     localStorage.setItem("carrinho", JSON.stringify(carrinho));
   }, [carrinho])
 
   return (
-    <CartContext.Provider value={{ carrinho, addToCart, changeValue, removeFromCart }}>
+    <CartContext.Provider value={{ carrinho, addToCart, changeValue, removeFromCart, getTotalItens, getTotalPrice }}>
       {children}
     </CartContext.Provider>
   );

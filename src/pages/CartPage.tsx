@@ -48,7 +48,7 @@ export function CartPage(){
                 </div>
                 <div className="divSlash-cartPage"></div>
                 <div>
-                    <CartProductAmount quantidade={2} subtotal={4893} total={4893}/>
+                    <CartProductAmount />
                     <CounpomComponent/>
                     <Link to={'/payment'} style={{textDecoration: 'none'}}>
                         <ButtonInputs text="Continuar para pagamento"/>

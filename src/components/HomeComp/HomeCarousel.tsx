@@ -11,24 +11,24 @@ import { Navigation, Pagination } from "swiper/modules";
 const data = [
     {
         id: 1,
-        image: "src/assets/imgs/aaa.png",
+        image: "src/assets/imgs/slider1.png",
         title: "Slide 1",
         
     },
     {
         id: 2,
-        image: "src/assets/imgs/aaa.png",
+        image: "src/assets/imgs/slider1.png",
         title: "Slide 2",
         
     },
     {
         id: 3,
-        image: "src/assets/imgs/aaa.png",
+        image: "src/assets/imgs/slider1.png",
         title: "Slide 3",
     },
     {
         id: 4,
-        image: "src/assets/imgs/aaa.png",
+        image: "src/assets/imgs/slider1.png",
         title: "Slide 4",
     }
     

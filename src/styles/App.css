@@ -1,4 +1,6 @@
-
+html, body {
+  width: 100vw;
+}
 
 
 .titleHome{
@@ -13,24 +15,65 @@
 }
 
 /*  Frame Header Styles*/
-.carouselContainer{
-  max-width: 100vw;
-  min-width: 350px;
-  padding: 20px 0px;
-  gap: 0px;
-  
-}
-
-.carouselDiv{
+.carouselContainer {
   display: grid;
   grid-auto-flow: column;
   gap: 1.2rem;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
+  position: relative;
+  width: 100%;
+}
+
+.carouselFrameDiv{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.2rem;
+
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  position: relative;
   width: 100%;
 
 
+}
+
+.card-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.carouselWrapper {
+  position: relative;
+
+  width: 100%;
+  height: 400px; /* Ajuste conforme necessário */
+  overflow: hidden;
+}
+
+.customScrollBar {
+  position: absolute;
+  top: 35px; /* Ajuste conforme necessário */
+  left: 0;
+  width: 100%;
+  height: 3px; /* Altura da barra */
+  background-color: #ddd;
+  border-radius: 3px;
+  overflow-x: auto;
+  scrollbar-width: none; /* Oculta a rolagem padrão no Firefox */
+}
+
+.customScrollBar::-webkit-scrollbar {
+  display: none; /* Oculta a barra padrão no Chrome */
+}
+
+.scrollThumb {
+  width: 30%; /* Ajuste conforme necessário */
+  height: 150%;
+  background-color: var(--primary-color);
+  border-radius: 3px;
 }
 
 .frameDiv{
@@ -72,7 +115,7 @@
   margin-top: auto;
   height:  360px;
   width: 100%;
-  padding: 16px 120px 16px 120px;
+  padding: 16px 110px 16px 110px;
   background-color: var(--primary-color);
   color: white;
   font-size: 14px;
@@ -95,40 +138,11 @@
 }
 
 
-.divProducts{
-  display: grid;
-  grid-auto-flow: column;
-  gap: 1.2rem;
-  overflow-x: scroll;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x mandatory;
-}
-.divProducts  {
-  min-width: max-content; /* Evita que os itens quebrem para a linha de baixo */
-}
 
-.divProducts::-webkit-scrollbar {
-  width: 8px;
-}
 
-.divProducts::-webkit-scrollbar-track {
-  background: var(--terciary-color);
-  border-radius: 10px;
-}
 
-.divProducts::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
-  border-radius: 10px;
-}
-
-.divProducts::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
 
 @media screen and (min-width: 900px) {
-  .carouselDiv{
-    scrollbar-width: none;
-  }
 
   
 }

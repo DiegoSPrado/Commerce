@@ -20,9 +20,9 @@ import '../../styles/ProductStyles/cartStyles.css';
   
     return (
       <div className='divBtnCart'>
-        <button onClick={() => changeValue(id, 1)} style={{borderRadius: '10px 0px 0px 10px'}}>+</button>
+        <button onClick={() => changeValue(id, 1)} style={{borderRadius: '20px 0px 0px 20px'}}>+</button>
         <div>{quantity}</div>
-        <button onClick={handleDiminuir} style={{borderRadius: '0px 10px 10px 0px'}}>-</button>
+        <button onClick={handleDiminuir} style={{borderRadius: '0px 20px 20px 0px'}}>-</button>
       </div>
     );
   };

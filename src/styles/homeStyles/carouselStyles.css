@@ -23,6 +23,8 @@
     width: 86px;
     height: 86px;
   }
+
+
   
   .swiper-button-prev:hover,
   .swiper-button-next:hover {
@@ -42,12 +44,16 @@
     height: 12px;
     opacity: 0.5;
     transition: all 0.3s ease;
+    transform: translateX(-450px);
   }
   
   .swiper-pagination-bullet-active {
     background: white;
+    width: 24px;
+    border-radius: 10px;
     opacity: 1;
     transform: scale(1.2);
+    transform: translateX(-450px);
   }
   
   .swiper-pagination {

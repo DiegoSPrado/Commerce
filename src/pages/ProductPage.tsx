@@ -34,7 +34,7 @@ export function ProductPage(){
             <HomeHeader/>
             <article >
                 <div className="productpage-container">
-                    <div style={{width: '70%', margin: 'auto'}}>
+                    <div style={{width: '70%', margin: 'auto'}} >
                         <div  className="productDiv-principal">
                             <img src={produto.image} alt={produto.name}/>
                         </div>

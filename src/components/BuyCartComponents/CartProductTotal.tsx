@@ -1,25 +1,26 @@
-interface CartProductAmountProps {
-    quantidade: number,
-    subtotal: number,
-    total: number
-}
 
 
-export function CartProductAmount(props: CartProductAmountProps){
+import { useCart } from "../../context/UseCart"
+
+
+export function CartProductAmount(){
+    
+    const {getTotalItens, getTotalPrice} = useCart();
+
     return(
         <div >  
             <h2>Resumo</h2>
             <div className="amountDiv">
                 <p>Produtos</p>
-                <p>{props.quantidade}</p>
+                <p className="lstP">{getTotalItens()}</p>
             </div>
             <div className="amountDiv">
                 <p>Subtotal</p>
-                <p>R$ {props.subtotal}</p>
+                <p className="lstP">R$ {getTotalPrice()}</p>
             </div>
             <div className="amountDiv">
                 <p>Total</p>
-                <p>R$ {props.total}</p>
+                <p className="lstP">R$ {getTotalPrice()}</p>
             </div>
         </div>
     )

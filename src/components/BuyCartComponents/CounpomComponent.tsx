@@ -16,7 +16,7 @@ export function CounpomComponent(){
                 id="counpom"
                 placeholder="Cupom promocional"
                 />
-                <button className="divWhite" style={{width: '50%'}}> Adicionar</button>
+                <button className="divWhite"> Adicionar</button>
             </div>
         </div>
     )

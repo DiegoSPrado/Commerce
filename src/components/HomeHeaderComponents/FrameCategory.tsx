@@ -42,7 +42,7 @@ export function FrameCategory(){
   };
 
     return(
-       <div className='carouselDiv'>
+       <div className='carouselFrameDiv'>
        {
         frameArray.map((e, index) => {
             return(
